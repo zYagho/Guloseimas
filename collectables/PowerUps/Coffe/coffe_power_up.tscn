@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cc4oybkcnimh4"]
+
+[ext_resource type="PackedScene" uid="uid://dg6bxwlh3khq1" path="res://collectables/PowerUps/base_power_up_collect.tscn" id="1_xovqy"]
+
+[sub_resource type="GDScript" id="GDScript_mdtua"]
+script/source = "extends BasePowerUpCollectable
+
+
+
+
+func teste_comit() -> void:
+	pass
+"
+
+[node name="CoffePowerUp" instance=ExtResource("1_xovqy")]
+script = SubResource("GDScript_mdtua")

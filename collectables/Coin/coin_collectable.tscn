@@ -1,0 +1,51 @@
+[gd_scene load_steps=11 format=3 uid="uid://bwe1oeauaqtal"]
+
+[ext_resource type="PackedScene" uid="uid://b0q6rym8fqcoj" path="res://collectables/base_collectable.tscn" id="1_hl8de"]
+[ext_resource type="Script" path="res://collectables/Coin/coin_collectable.gd" id="2_0yjfh"]
+[ext_resource type="Texture2D" uid="uid://bgtk1tgqsk45x" path="res://collectables/Coin/sprite_0.png" id="3_1udo2"]
+[ext_resource type="Texture2D" uid="uid://bm5ce2w7n0p4" path="res://collectables/Coin/sprite_1.png" id="4_fdn4t"]
+[ext_resource type="Texture2D" uid="uid://dphwbyxsvjx8" path="res://collectables/Coin/sprite_2.png" id="5_xw70l"]
+[ext_resource type="Texture2D" uid="uid://drici4dy7e52n" path="res://collectables/Coin/sprite_3.png" id="6_k1bnr"]
+[ext_resource type="Texture2D" uid="uid://65fhm31fs4s0" path="res://collectables/Coin/sprite_4.png" id="7_4hd3e"]
+[ext_resource type="Texture2D" uid="uid://cg5ft0s3lleqk" path="res://collectables/Coin/sprite_5.png" id="8_e4n72"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_818ew"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1udo2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fdn4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xw70l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_k1bnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4hd3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_e4n72")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7oyn0"]
+size = Vector2(26, 14)
+
+[node name="CoinCollectable" instance=ExtResource("1_hl8de")]
+script = ExtResource("2_0yjfh")
+
+[node name="Texture" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_818ew")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Collision" parent="." index="1"]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_7oyn0")

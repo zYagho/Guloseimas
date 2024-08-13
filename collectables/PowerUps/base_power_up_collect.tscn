@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg6bxwlh3khq1"]
+
+[ext_resource type="PackedScene" uid="uid://b0q6rym8fqcoj" path="res://collectables/base_collectable.tscn" id="1_g3e1a"]
+[ext_resource type="Script" path="res://collectables/PowerUps/base_power_up_collect.gd" id="2_qgsfk"]
+
+[node name="BasePowerUpCollect" instance=ExtResource("1_g3e1a")]
+script = ExtResource("2_qgsfk")
+
+[node name="PowerUpTimer" type="Timer" parent="." index="2"]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="PowerUpTimer" to="." method="_on_power_up_timer_timeout"]
