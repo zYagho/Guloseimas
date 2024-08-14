@@ -9,9 +9,6 @@ class_name CoffePowerUp
 
 const _AGILLITY_BUFF = preload(\"res://character/buffs/Agillity/agility_buff.tscn\")
 
-func _setPowerUP(_is_active: bool) -> void:
-	print(\"Timer funcionou\")
-
 func _on_body_entered(_body) -> void:
 	if _body is UTFanoCharacter:
 		print(\"Pode Consumir\")

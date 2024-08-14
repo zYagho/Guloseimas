@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dr0mtq3wsbk00"]
 
-[ext_resource type="Script" path="res://character/BaseCharacter.gd" id="1_eqo74"]
+[ext_resource type="Script" path="res://character/base_character.gd" id="1_eqo74"]
 [ext_resource type="Script" path="res://character/texture.gd" id="2_om2bm"]
 
 [node name="BaseCharacter" type="CharacterBody2D" node_paths=PackedStringArray("_character_texture")]

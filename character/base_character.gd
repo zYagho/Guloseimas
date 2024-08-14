@@ -6,7 +6,10 @@ class_name BaseCharacter
 
 @export_category("Variables")
 @export var _speed: float = 150
+@export var _double_jump: bool = false
 @export var _jump_velocity: float = 250
+
+var _jump_count: int = 2
 
 func _physics_process(_delta):
 	

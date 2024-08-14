@@ -90,5 +90,5 @@ shape = SubResource("RectangleShape2D_wwpi0")
 
 [node name="texture" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_bxvln")
-animation = &"idle"
+animation = &"run"
 autoplay = "idle"
