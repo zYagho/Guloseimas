@@ -37,9 +37,11 @@ window/stretch/mode="viewport"
 
 folder_colors={
 "res://Singletons/": "blue",
+"res://animatable/": "pink",
 "res://character/": "red",
 "res://collectables/": "orange",
 "res://entities/": "yellow",
+"res://interactables/": "purple",
 "res://level/": "green",
 "res://terrain/": "teal"
 }

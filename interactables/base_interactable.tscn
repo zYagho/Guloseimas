@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpjjq2ulsqkw2"]
+
+[ext_resource type="Script" path="res://interactables/base_interactable.gd" id="1_fjlbx"]
+
+[node name="BaseInteractable" type="Area2D" node_paths=PackedStringArray("_texture")]
+script = ExtResource("1_fjlbx")
+_texture = NodePath("Texture")
+
+[node name="Texture" type="AnimatedSprite2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

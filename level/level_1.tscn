@@ -31,3 +31,9 @@ position = Vector2(72, 272)
 
 [node name="DoubleJumpPowerUp" parent="PowerUps" index="2"]
 position = Vector2(522, 165)
+
+[node name="Platform" parent="Animatables" index="0"]
+position = Vector2(607, 421)
+
+[node name="ButtonInteractable" parent="Interactables" index="0"]
+position = Vector2(690, 189)

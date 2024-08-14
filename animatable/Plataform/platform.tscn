@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://cna223l6131tw"]
+
+[ext_resource type="PackedScene" uid="uid://c5fohp857jbyu" path="res://animatable/base_animatable_object.tscn" id="1_ius64"]
+[ext_resource type="Script" path="res://animatable/Plataform/platform.gd" id="2_hxa5f"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1yfyr"]
+load_path = "res://.godot/imported/plataform.png-c2ad200535fc7cb993bc8723fe8e10c7.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6dah1"]
+size = Vector2(16, 8)
+
+[node name="Platform" instance=ExtResource("1_ius64")]
+script = ExtResource("2_hxa5f")
+
+[node name="Sprite" parent="." index="0"]
+texture = SubResource("CompressedTexture2D_1yfyr")
+
+[node name="Collision" parent="." index="1"]
+shape = SubResource("RectangleShape2D_6dah1")

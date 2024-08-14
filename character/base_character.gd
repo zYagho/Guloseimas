@@ -9,7 +9,7 @@ class_name BaseCharacter
 @export var _double_jump: bool = false
 @export var _jump_velocity: float = 250
 
-var _jump_count: int = 2
+var _jump_count: int = 0
 
 func _physics_process(_delta):
 	

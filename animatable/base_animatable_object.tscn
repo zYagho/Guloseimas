@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c5fohp857jbyu"]
+
+[node name="BaseAnimatableObject" type="AnimatableBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="."]
