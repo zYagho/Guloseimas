@@ -2,10 +2,7 @@ extends Area2D
 class_name BaseCollectable
 
 func _on_body_entered(_body) -> void:
-	
-	if _body is BaseCharacter:
-		_consume()
-		queue_free()
+	pass
 		
-func _consume() -> void:
+func _consume(_body) -> void:
 	pass

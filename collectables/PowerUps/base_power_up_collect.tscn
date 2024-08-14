@@ -5,9 +5,3 @@
 
 [node name="BasePowerUpCollect" instance=ExtResource("1_g3e1a")]
 script = ExtResource("2_qgsfk")
-
-[node name="PowerUpTimer" type="Timer" parent="." index="2"]
-wait_time = 3.0
-one_shot = true
-
-[connection signal="timeout" from="PowerUpTimer" to="." method="_on_power_up_timer_timeout"]

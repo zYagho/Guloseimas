@@ -83,8 +83,6 @@ animations = [{
 
 [node name="UTFanoCharacter" instance=ExtResource("1_hhpsi")]
 script = ExtResource("2_3c44o")
-_speed = 150.0
-_jump_velocity = 250.0
 
 [node name="collision" parent="." index="0"]
 position = Vector2(1.5, 1)
