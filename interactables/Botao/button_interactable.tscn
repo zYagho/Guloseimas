@@ -35,7 +35,7 @@ script = ExtResource("2_uxbck")
 
 [node name="Texture" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_efcdd")
-animation = &"interact"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="Collision" parent="." index="1"]

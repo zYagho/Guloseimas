@@ -2,12 +2,16 @@
 
 [ext_resource type="Script" path="res://interactables/base_interactable.gd" id="1_fjlbx"]
 
-[node name="BaseInteractable" type="Area2D" node_paths=PackedStringArray("_texture")]
+[node name="BaseInteractable" type="Area2D" node_paths=PackedStringArray("_texture", "_interact_timer")]
 script = ExtResource("1_fjlbx")
 _texture = NodePath("Texture")
+_interact_timer = NodePath("InteractTimer")
 
 [node name="Texture" type="AnimatedSprite2D" parent="."]
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 
+[node name="InteractTimer" type="Timer" parent="."]
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="InteractTimer" to="." method="_on_interact_timer_timeout"]

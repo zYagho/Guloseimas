@@ -1,20 +1,26 @@
-extends AnimatableBody2D
+extends BaseAnimatable
 class_name Platform
 
-@export_category("Variables")
-@export var _move_speed: float = 3.0
-@export var _distance: int = 192
-@export var _move_horizontal: bool = false
+var posicao_inicial: Vector2
+var _platform_tween
+var _duration_interact
 
-var _follow := Vector2.ZERO
-var _plataform_center: int = 16
-
-func _physics_process(_delta: float):
-	self.position = self.position.lerp(_follow, 0.5)
-
-func interact() -> void:
-	var _move_direction := Vector2.RIGHT * _distance if _move_horizontal else Vector2.UP * _distance
-	var _duration := _move_direction.length() / float(_move_speed * _plataform_center)
+func _ready():
+	posicao_inicial = get_global_position()
 	
-	var platform_tween = create_tween()
-	platform_tween.tween_property(self, "follow", _move_direction, _duration)
+func interact(_position: Vector2, _duration: float) -> void:
+	
+	_duration_interact = _duration
+	if _platform_tween != null:
+		_platform_tween.kill()
+	_platform_tween = get_tree().create_tween()
+	_platform_tween.tween_property(self, "global_position", posicao_inicial - _position, _duration)
+
+func release() -> void:
+	if _platform_tween != null:
+		_platform_tween.kill()
+		
+	_platform_tween = get_tree().create_tween()
+	_platform_tween.chain().tween_property(self, "global_position", posicao_inicial, _duration_interact)
+		
+

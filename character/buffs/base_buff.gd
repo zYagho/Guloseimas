@@ -17,4 +17,3 @@ func _applyBuff(_is_active: bool) -> void:
 	
 func _on_buff_timer_timeout() -> void:
 	_applyBuff(false)
-	print("FUNCIONOU")

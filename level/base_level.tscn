@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cv42usodk4xdv"]
+[gd_scene load_steps=10 format=3 uid="uid://cv42usodk4xdv"]
 
 [ext_resource type="PackedScene" uid="uid://b0cmg4alhlskw" path="res://character/utfano/utfano_character.tscn" id="1_kv5da"]
 [ext_resource type="PackedScene" uid="uid://bjlykb0sdjpb7" path="res://character/GDzinha/gdzinha_character.tscn" id="2_3is3v"]
@@ -8,22 +8,16 @@
 [ext_resource type="PackedScene" uid="uid://demrm01t1rr0d" path="res://collectables/PowerUps/Juices/RedJuice/double_jump_power_up.tscn" id="6_sl8bf"]
 [ext_resource type="PackedScene" uid="uid://cna223l6131tw" path="res://animatable/Plataform/platform.tscn" id="7_cbixk"]
 [ext_resource type="PackedScene" uid="uid://b5e1lbhmgewwi" path="res://interactables/Botao/button_interactable.tscn" id="7_n5mm0"]
+[ext_resource type="PackedScene" uid="uid://cmt6y83g1mkj3" path="res://entities/patrulha/patrulha.tscn" id="9_pgk3d"]
 
 [node name="BaseLevel" type="Node2D"]
 
-[node name="UTFanoCharacter" parent="." instance=ExtResource("1_kv5da")]
-
-[node name="GDzinhaCharacter" parent="." instance=ExtResource("2_3is3v")]
-
 [node name="Terrain" parent="." instance=ExtResource("2_l5rkk")]
 
-[node name="Coins" type="Node2D" parent="."]
+[node name="Interactables" type="Node2D" parent="."]
 
-[node name="CoinCollectable2" parent="Coins" instance=ExtResource("3_yq6uy")]
-
-[node name="CoinCollectable3" parent="Coins" instance=ExtResource("3_yq6uy")]
-
-[node name="CoinCollectable4" parent="Coins" instance=ExtResource("3_yq6uy")]
+[node name="ButtonInteractable" parent="Interactables" node_paths=PackedStringArray("_interactable_object") instance=ExtResource("7_n5mm0")]
+_interactable_object = NodePath("../../Animatables/Platform")
 
 [node name="PowerUps" type="Node2D" parent="."]
 
@@ -37,7 +31,20 @@
 
 [node name="Platform" parent="Animatables" instance=ExtResource("7_cbixk")]
 
-[node name="Interactables" type="Node2D" parent="."]
+[node name="Coins" type="Node2D" parent="."]
 
-[node name="ButtonInteractable" parent="Interactables" node_paths=PackedStringArray("_interactable_object") instance=ExtResource("7_n5mm0")]
-_interactable_object = NodePath("../../Animatables/Platform")
+[node name="CoinCollectable2" parent="Coins" instance=ExtResource("3_yq6uy")]
+
+[node name="CoinCollectable3" parent="Coins" instance=ExtResource("3_yq6uy")]
+
+[node name="CoinCollectable4" parent="Coins" instance=ExtResource("3_yq6uy")]
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="UTFanoCharacter" parent="Characters" instance=ExtResource("1_kv5da")]
+
+[node name="GDzinhaCharacter" parent="Characters" instance=ExtResource("2_3is3v")]
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="BaseEnemy" parent="Enemies" instance=ExtResource("9_pgk3d")]
