@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dphwbyxsvjx8"
-path="res://.godot/imported/sprite_2.png-b47c23c0438959e8bcf739b0c79cd94b.ctex"
+uid="uid://dc64i27jx1cdn"
+path="res://.godot/imported/plataforma.png-15bd96af66c99f4961e71ebc5e37a5f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collectables/Coin/sprite_2.png"
-dest_files=["res://.godot/imported/sprite_2.png-b47c23c0438959e8bcf739b0c79cd94b.ctex"]
+source_file="res://terrain/objects/plataforma.png"
+dest_files=["res://.godot/imported/plataforma.png-15bd96af66c99f4961e71ebc5e37a5f6.ctex"]
 
 [params]
 

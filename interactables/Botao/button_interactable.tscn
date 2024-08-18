@@ -30,8 +30,13 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2q747"]
 size = Vector2(21, 11)
 
-[node name="ButtonInteractable" instance=ExtResource("1_qfpti")]
+[node name="ButtonInteractable" node_paths=PackedStringArray("_texture", "_interact_timer") instance=ExtResource("1_qfpti")]
 script = ExtResource("2_uxbck")
+_interact_duration = 3.0
+_interact_position = Vector2(0, 220)
+_interact_stop = 3.0
+_texture = NodePath("Texture")
+_interact_timer = NodePath("InteractTimer")
 
 [node name="Texture" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_efcdd")

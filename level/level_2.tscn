@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmsabrqtscgym"]
+
+[ext_resource type="PackedScene" uid="uid://cv42usodk4xdv" path="res://level/base_level.tscn" id="1_10aph"]
+
+[node name="level_2" instance=ExtResource("1_10aph")]
+
+[node name="Terrain" parent="." index="0"]
+layer_0/tile_data = PackedInt32Array(655362, 65539, 2, 655363, 65539, 2, 655364, 65539, 2, 655365, 65539, 2, 655366, 65539, 2, 655367, 65539, 2, 655368, 65539, 2, 655369, 65539, 2, 655370, 65539, 2, 655371, 65539, 2, 655372, 65539, 2, 655373, 65539, 2, 655374, 65539, 2, 655375, 65539, 2, 655376, 65539, 2, 655377, 65539, 2, 655378, 65539, 2, 655379, 65539, 2, 655380, 65539, 2, 655381, 65539, 2, 655382, 65539, 2, 655383, 65539, 2, 589847, 65539, 2, 524311, 65539, 2, 458775, 65539, 2, 589826, 65539, 2, 524290, 65539, 2)
+
+[node name="DoorInteractable" parent="Interactables" index="0"]
+position = Vector2(682, 303)
+
+[node name="UTFanoCharacter" parent="Characters" index="0"]
+position = Vector2(149, 271)
+
+[node name="GDzinhaCharacter" parent="Characters" index="1"]
+position = Vector2(201, 278)

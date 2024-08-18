@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bm5ce2w7n0p4"
-path="res://.godot/imported/sprite_1.png-ab47c53c0f1793c082a53d6859553f0f.ctex"
+uid="uid://lvc70ktfh0te"
+path="res://.godot/imported/porta_abrindo2.png-4ef6374ddf752df627531e86321ab8a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collectables/Coin/sprite_1.png"
-dest_files=["res://.godot/imported/sprite_1.png-ab47c53c0f1793c082a53d6859553f0f.ctex"]
+source_file="res://interactables/Porta/porta_abrindo2.png"
+dest_files=["res://.godot/imported/porta_abrindo2.png-4ef6374ddf752df627531e86321ab8a5.ctex"]
 
 [params]
 

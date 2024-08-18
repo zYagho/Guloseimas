@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgtk1tgqsk45x"
-path="res://.godot/imported/sprite_0.png-3b43a6ae0d5bbdcdaf6cd1fef540a39f.ctex"
+uid="uid://c3cddpkc5trsu"
+path="res://.godot/imported/porta_fechada.png-46c66ac736e31c40ddd1e7b653c31e7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collectables/Coin/sprite_0.png"
-dest_files=["res://.godot/imported/sprite_0.png-3b43a6ae0d5bbdcdaf6cd1fef540a39f.ctex"]
+source_file="res://interactables/Porta/porta_fechada.png"
+dest_files=["res://.godot/imported/porta_fechada.png-46c66ac736e31c40ddd1e7b653c31e7a.ctex"]
 
 [params]
 

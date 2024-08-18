@@ -2,10 +2,8 @@
 
 [ext_resource type="Script" path="res://interactables/base_interactable.gd" id="1_fjlbx"]
 
-[node name="BaseInteractable" type="Area2D" node_paths=PackedStringArray("_texture", "_interact_timer")]
+[node name="BaseInteractable" type="Area2D"]
 script = ExtResource("1_fjlbx")
-_texture = NodePath("Texture")
-_interact_timer = NodePath("InteractTimer")
 
 [node name="Texture" type="AnimatedSprite2D" parent="."]
 

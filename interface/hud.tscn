@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8622qm0jhtdw"]
+
+[ext_resource type="Texture2D" uid="uid://bn3o7jlyj1nu" path="res://collectables/Coin/jujuba_roxa.png" id="1_8s425"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Container" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CoinContainer" type="HBoxContainer" parent="Control/Container"]
+layout_mode = 2
+
+[node name="CoinIcon" type="TextureRect" parent="Control/Container/CoinContainer"]
+layout_mode = 2
+texture = ExtResource("1_8s425")
+
+[node name="CoinLabel" type="Label" parent="Control/Container/CoinContainer"]
+layout_mode = 2

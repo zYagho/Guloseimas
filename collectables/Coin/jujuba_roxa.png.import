@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drici4dy7e52n"
-path="res://.godot/imported/sprite_3.png-59e765a6e9850ac4515b2306b823c949.ctex"
+uid="uid://bn3o7jlyj1nu"
+path="res://.godot/imported/jujuba_roxa.png-9c5c66b78816d370179ac35d8002c049.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collectables/Coin/sprite_3.png"
-dest_files=["res://.godot/imported/sprite_3.png-59e765a6e9850ac4515b2306b823c949.ctex"]
+source_file="res://collectables/Coin/jujuba_roxa.png"
+dest_files=["res://.godot/imported/jujuba_roxa.png-9c5c66b78816d370179ac35d8002c049.ctex"]
 
 [params]
 
