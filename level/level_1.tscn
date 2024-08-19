@@ -44,7 +44,7 @@ position = Vector2(47, 432)
 _speed = 90.0
 
 [node name="GDzinhaCharacter" parent="Characters" index="1"]
-position = Vector2(462, 110)
+position = Vector2(45, 112)
 _speed = 140.0
 
 [node name="Temp" parent="." index="7"]

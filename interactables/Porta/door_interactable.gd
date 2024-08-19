@@ -33,3 +33,4 @@ func _on_texture_animation_finished():
 	if _texture.animation == "opening":
 		global.change_scene(_path)
 		print("Trocar de cena")
+		#ainda falta implementar o segundo nivel em diante...
