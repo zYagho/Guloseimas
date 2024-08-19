@@ -1,22 +1,96 @@
-[gd_scene load_steps=6 format=3 uid="uid://demrm01t1rr0d"]
+[gd_scene load_steps=17 format=3 uid="uid://demrm01t1rr0d"]
 
 [ext_resource type="PackedScene" uid="uid://dg6bxwlh3khq1" path="res://collectables/PowerUps/base_power_up_collect.tscn" id="1_wn06s"]
 [ext_resource type="Script" path="res://collectables/PowerUps/Juices/RedJuice/double_jump_power_up.gd" id="2_sgac6"]
-[ext_resource type="Texture2D" uid="uid://mk0mc03ghg3y" path="res://collectables/PowerUps/Juices/RedJuice/sprite_0.png" id="3_k7lc5"]
+[ext_resource type="Texture2D" uid="uid://be01bp5d5p3k0" path="res://collectables/PowerUps/pu_energia.png" id="3_j745m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_udhec"]
+atlas = ExtResource("3_j745m")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_om1vl"]
+atlas = ExtResource("3_j745m")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6610q"]
+atlas = ExtResource("3_j745m")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ciilc"]
+atlas = ExtResource("3_j745m")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c8b7h"]
+atlas = ExtResource("3_j745m")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ly7s"]
+atlas = ExtResource("3_j745m")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a07vm"]
+atlas = ExtResource("3_j745m")
+region = Rect2(0, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_blqok"]
+atlas = ExtResource("3_j745m")
+region = Rect2(0, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gekh3"]
+atlas = ExtResource("3_j745m")
+region = Rect2(0, 256, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_reehr"]
+atlas = ExtResource("3_j745m")
+region = Rect2(0, 288, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l27b6"]
+atlas = ExtResource("3_j745m")
+region = Rect2(0, 320, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nfa70"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_k7lc5")
+"texture": SubResource("AtlasTexture_udhec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_om1vl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6610q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ciilc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c8b7h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ly7s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a07vm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_blqok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gekh3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_reehr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l27b6")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvejv"]
-size = Vector2(30, 37)
+size = Vector2(22, 32)
 
 [node name="DoubleJumpPowerUp" instance=ExtResource("1_wn06s")]
 script = ExtResource("2_sgac6")
@@ -26,5 +100,5 @@ sprite_frames = SubResource("SpriteFrames_nfa70")
 animation = &"idle"
 
 [node name="Collision" parent="." index="1"]
-position = Vector2(0, -0.5)
+position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_uvejv")

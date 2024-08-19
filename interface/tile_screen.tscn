@@ -1,0 +1,89 @@
+[gd_scene load_steps=5 format=3 uid="uid://hotr2tr1ub07"]
+
+[ext_resource type="Texture2D" uid="uid://bciecbwe3bek5" path="res://interface/Characters/Utfano.png" id="1_eun2a"]
+[ext_resource type="Script" path="res://interface/tile_screen.gd" id="1_ms3rq"]
+[ext_resource type="Texture2D" uid="uid://ba2tyjbc4vbg3" path="res://interface/Characters/Gdzinha.png" id="2_ky6jy"]
+[ext_resource type="FontFile" uid="uid://dn85xow4aphek" path="res://fonts/RevMiniPixel.ttf" id="3_af7nn"]
+
+[node name="TileScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ms3rq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="UTFano" type="TextureRect" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("1_eun2a")
+expand_mode = 3
+stretch_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ButtonStart" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_af7nn")
+theme_override_font_sizes/font_size = 16
+text = "COMEÇAR"
+
+[node name="ButtonCredits" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_af7nn")
+theme_override_font_sizes/font_size = 16
+text = "CREDITOS"
+
+[node name="ButtonQuit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_af7nn")
+theme_override_font_sizes/font_size = 16
+text = "SAIR"
+
+[node name="GDzinha" type="TextureRect" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_ky6jy")
+expand_mode = 3
+stretch_mode = 3
+
+[node name="LabelTitle" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("3_af7nn")
+theme_override_font_sizes/font_size = 46
+text = "GULOSEIMAS"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/ButtonStart" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/ButtonCredits" to="." method="_on_button_credits_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/ButtonQuit" to="." method="_on_button_quit_pressed"]

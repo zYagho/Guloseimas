@@ -1,25 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://bwe1oeauaqtal"]
+[gd_scene load_steps=7 format=3 uid="uid://bwe1oeauaqtal"]
 
 [ext_resource type="PackedScene" uid="uid://b0q6rym8fqcoj" path="res://collectables/base_collectable.tscn" id="1_hl8de"]
 [ext_resource type="Script" path="res://collectables/Coin/coin_collectable.gd" id="2_0yjfh"]
 [ext_resource type="Texture2D" uid="uid://bn3o7jlyj1nu" path="res://collectables/Coin/jujuba_roxa.png" id="3_6tftf"]
-[ext_resource type="Texture2D" uid="uid://c0gyumcrk3nbg" path="res://collectables/Coin/coin.png" id="4_ybera"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ixkhy"]
-atlas = ExtResource("4_ybera")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_glm8j"]
-atlas = ExtResource("4_ybera")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ccbnk"]
-atlas = ExtResource("4_ybera")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tqaqg"]
-atlas = ExtResource("4_ybera")
-region = Rect2(96, 0, 32, 32)
+[ext_resource type="Texture2D" uid="uid://rsuhvaavnv41" path="res://collectables/Coin/jujuba_roxa_grande.png" id="4_g65yf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_818ew"]
 animations = [{
@@ -33,19 +17,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ixkhy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_glm8j")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ccbnk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tqaqg")
+"texture": ExtResource("4_g65yf")
 }],
 "loop": true,
-"name": &"new_animation",
+"name": &"teste",
 "speed": 5.0
 }]
 
@@ -57,9 +32,9 @@ script = ExtResource("2_0yjfh")
 
 [node name="Texture" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_818ew")
-animation = &"new_animation"
-autoplay = "new_animation"
-frame_progress = 0.585029
+animation = &"teste"
+autoplay = "teste"
 
 [node name="Collision" parent="." index="1"]
+visible = false
 shape = SubResource("CircleShape2D_0vxbr")

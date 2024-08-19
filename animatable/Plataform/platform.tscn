@@ -2,16 +2,17 @@
 
 [ext_resource type="PackedScene" uid="uid://c5fohp857jbyu" path="res://animatable/base_animatable_object.tscn" id="1_ius64"]
 [ext_resource type="Script" path="res://animatable/Plataform/platform.gd" id="2_hxa5f"]
-[ext_resource type="Texture2D" uid="uid://dwxsopd4ppmu3" path="res://animatable/Plataform/barra-64.png" id="3_wn0lj"]
+[ext_resource type="Texture2D" uid="uid://dw6oot1r82voy" path="res://animatable/Plataform/PLataform_mapa.png" id="3_wv4tb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6dah1"]
-size = Vector2(64, 16)
+size = Vector2(64, 9)
 
 [node name="Platform" instance=ExtResource("1_ius64")]
 script = ExtResource("2_hxa5f")
 
 [node name="Sprite" parent="." index="0"]
-texture = ExtResource("3_wn0lj")
+texture = ExtResource("3_wv4tb")
 
 [node name="Collision" parent="." index="1"]
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_6dah1")
