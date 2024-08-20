@@ -45,8 +45,10 @@ _interactable_object = NodePath("../../Animatables/Platform")
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="UTFanoCharacter" parent="Characters" instance=ExtResource("1_kv5da")]
+_speed = 100.0
 
 [node name="GDzinhaCharacter" parent="Characters" instance=ExtResource("2_3is3v")]
+_speed = 150.0
 
 [node name="Temp" type="Node2D" parent="."]
 script = ExtResource("11_66w4v")

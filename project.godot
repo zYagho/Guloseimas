@@ -40,9 +40,13 @@ folder_colors={
 "res://animatable/": "pink",
 "res://character/": "red",
 "res://collectables/": "orange",
+"res://effects/": "pink",
 "res://entities/": "yellow",
+"res://fonts/": "teal",
 "res://interactables/": "purple",
-"res://level/": "green",
+"res://interface/": "green",
+"res://level/": "red",
+"res://levels_notepad/": "yellow",
 "res://terrain/": "teal"
 }
 

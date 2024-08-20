@@ -20,7 +20,7 @@ func _ready():
 	_timer_counter.text = str("%02d" % default_minutes) + ":" + str("%02d" % default_seconds)
 	reset_clock_timer()
 		
-func _process(delta):
+func _process(_delta):
 	_coin_counter.text = str("%04d" %  global.score)
 	if minutes == 0 and seconds == 0:
 		#Lembrar de fazer aqui a parte do Game Over

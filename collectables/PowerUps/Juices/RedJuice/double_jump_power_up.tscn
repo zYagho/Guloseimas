@@ -98,6 +98,7 @@ script = ExtResource("2_sgac6")
 [node name="Texture" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_nfa70")
 animation = &"idle"
+autoplay = "idle"
 
 [node name="Collision" parent="." index="1"]
 position = Vector2(0, -1)

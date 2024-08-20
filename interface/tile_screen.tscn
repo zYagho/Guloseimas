@@ -1,9 +1,31 @@
-[gd_scene load_steps=5 format=3 uid="uid://hotr2tr1ub07"]
+[gd_scene load_steps=11 format=3 uid="uid://hotr2tr1ub07"]
 
-[ext_resource type="Texture2D" uid="uid://bciecbwe3bek5" path="res://interface/Characters/Utfano.png" id="1_eun2a"]
 [ext_resource type="Script" path="res://interface/tile_screen.gd" id="1_ms3rq"]
-[ext_resource type="Texture2D" uid="uid://ba2tyjbc4vbg3" path="res://interface/Characters/Gdzinha.png" id="2_ky6jy"]
+[ext_resource type="Texture2D" uid="uid://dmgh08c42pnvh" path="res://interface/Characters/Characters_animated/Utfano/01.png" id="2_x68sc"]
 [ext_resource type="FontFile" uid="uid://dn85xow4aphek" path="res://fonts/RevMiniPixel.ttf" id="3_af7nn"]
+[ext_resource type="Texture2D" uid="uid://dje816igo3mps" path="res://interface/Characters/Characters_animated/Utfano/02.png" id="3_lb8iv"]
+[ext_resource type="Texture2D" uid="uid://pfoyh43j32uo" path="res://interface/Characters/Characters_animated/Utfano/05.png" id="4_dwqk4"]
+[ext_resource type="Texture2D" uid="uid://d0nuwxkk6ic6t" path="res://interface/Characters/Characters_animated/Gdzinha/01.png" id="6_8uwem"]
+[ext_resource type="Texture2D" uid="uid://dx7ckk3lyp2v7" path="res://interface/Characters/Characters_animated/Gdzinha/02.png" id="7_grbgq"]
+[ext_resource type="Texture2D" uid="uid://qpl0kfnoyfwh" path="res://interface/Characters/Characters_animated/Gdzinha/03.png" id="8_j0ioh"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_dm4nn"]
+frames = 3
+frame_0/texture = ExtResource("2_x68sc")
+frame_0/duration = 0.5
+frame_1/texture = ExtResource("3_lb8iv")
+frame_1/duration = 0.5
+frame_2/texture = ExtResource("4_dwqk4")
+frame_2/duration = 0.5
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_0n1aw"]
+frames = 3
+frame_0/texture = ExtResource("6_8uwem")
+frame_0/duration = 0.3
+frame_1/texture = ExtResource("7_grbgq")
+frame_1/duration = 0.3
+frame_2/texture = ExtResource("8_j0ioh")
+frame_2/duration = 0.3
 
 [node name="TileScreen" type="Control"]
 layout_mode = 3
@@ -40,7 +62,7 @@ size_flags_horizontal = 4
 [node name="UTFano" type="TextureRect" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-texture = ExtResource("1_eun2a")
+texture = SubResource("AnimatedTexture_dm4nn")
 expand_mode = 3
 stretch_mode = 3
 
@@ -72,7 +94,7 @@ text = "SAIR"
 
 [node name="GDzinha" type="TextureRect" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
-texture = ExtResource("2_ky6jy")
+texture = SubResource("AnimatedTexture_0n1aw")
 expand_mode = 3
 stretch_mode = 3
 

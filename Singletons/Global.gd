@@ -25,5 +25,7 @@ func _call_scene(_path) -> void:
 	get_tree().root.add_child(current_scene)
 	get_tree().current_scene = current_scene
 	
+	score = 0
+	
 func quit_game() -> void:
 	pass
