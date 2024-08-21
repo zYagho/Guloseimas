@@ -1,9 +1,10 @@
-[gd_scene load_steps=23 format=3 uid="uid://bwe1oeauaqtal"]
+[gd_scene load_steps=24 format=3 uid="uid://bwe1oeauaqtal"]
 
 [ext_resource type="PackedScene" uid="uid://b0q6rym8fqcoj" path="res://collectables/base_collectable.tscn" id="1_hl8de"]
 [ext_resource type="Script" path="res://collectables/Coin/coin_collectable.gd" id="2_0yjfh"]
 [ext_resource type="Texture2D" uid="uid://ba8l57rfxeudj" path="res://effects/sparkles_coleta_jujuba.png" id="3_0wn2f"]
 [ext_resource type="Texture2D" uid="uid://rsuhvaavnv41" path="res://collectables/Coin/jujuba_roxa_grande.png" id="4_g65yf"]
+[ext_resource type="AudioStream" uid="uid://qgsogm8dd4df" path="res://songs/coin_music.mp3" id="5_kecmb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nrjxg"]
 atlas = ExtResource("3_0wn2f")
@@ -133,9 +134,8 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_0vxbr"]
 radius = 9.0
 
-[node name="CoinCollectable" node_paths=PackedStringArray("_texture") instance=ExtResource("1_hl8de")]
+[node name="CoinCollectable" instance=ExtResource("1_hl8de")]
 script = ExtResource("2_0yjfh")
-_texture = NodePath("Texture")
 
 [node name="Texture" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_818ew")
@@ -146,5 +146,8 @@ frame_progress = 1.0
 
 [node name="Collision" parent="." index="1"]
 shape = SubResource("CircleShape2D_0vxbr")
+
+[node name="Song" parent="." index="2"]
+stream = ExtResource("5_kecmb")
 
 [connection signal="animation_finished" from="Texture" to="." method="_on_texture_animation_finished"]

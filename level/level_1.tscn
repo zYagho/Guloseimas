@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dpc08aqf7va8w"]
 
 [ext_resource type="PackedScene" uid="uid://cv42usodk4xdv" path="res://level/base_level.tscn" id="1_lwmfb"]
-[ext_resource type="AudioStream" uid="uid://dhjfaqmhxy5t4" path="res://songs/background.wav" id="2_tvmf8"]
+[ext_resource type="AudioStream" uid="uid://dt323sf4jks1o" path="res://songs/background.wav" id="2_tvmf8"]
 [ext_resource type="FontFile" uid="uid://dn85xow4aphek" path="res://fonts/RevMiniPixel.ttf" id="3_f2nqi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4daoa"]
