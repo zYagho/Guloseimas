@@ -37,6 +37,7 @@ window/stretch/mode="viewport"
 
 folder_colors={
 "res://Singletons/": "blue",
+"res://TempFiles/": "gray",
 "res://animatable/": "pink",
 "res://character/": "red",
 "res://collectables/": "orange",
@@ -47,6 +48,7 @@ folder_colors={
 "res://interface/": "green",
 "res://level/": "red",
 "res://levels_notepad/": "yellow",
+"res://songs/": "pink",
 "res://terrain/": "teal"
 }
 
