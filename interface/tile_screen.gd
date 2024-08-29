@@ -1,11 +1,15 @@
 extends Control
 class_name TitleScreen
 
+@export_category("Level")
+@export var _scene_path: String
+
 func _ready():
-	global.current_scene = self
+	global.current_scene_path = _scene_path
 
 func _on_button_start_pressed():
-	global.change_scene("res://level/level_1.tscn")
+	global.current_scene_path = "res://level/level_1.tscn"
+	transition.fade_in()
 
 func _on_button_credits_pressed():
 	pass # Replace with function body.

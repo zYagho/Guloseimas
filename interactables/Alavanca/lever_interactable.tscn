@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://dixypyy3utxhh"]
+
+[ext_resource type="PackedScene" uid="uid://cpjjq2ulsqkw2" path="res://interactables/base_interactable.tscn" id="1_5t3cw"]
+[ext_resource type="Script" path="res://interactables/Alavanca/lever_interactable.gd" id="2_8ypo2"]
+[ext_resource type="Texture2D" uid="uid://b0qxweeip4c46" path="res://interactables/Alavanca/esquerda.png" id="2_lsmcf"]
+[ext_resource type="Texture2D" uid="uid://dkh3lmwkxnypr" path="res://interactables/Alavanca/direita.png" id="3_wxmjw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rpgbi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_wxmjw")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lsmcf")
+}],
+"loop": true,
+"name": &"interact",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_81bhh"]
+size = Vector2(24, 15)
+
+[node name="LeverInteractable" node_paths=PackedStringArray("_texture", "_interact_timer") instance=ExtResource("1_5t3cw")]
+script = ExtResource("2_8ypo2")
+_interact_duration = 3.0
+_interact_position = Vector2(0, 220)
+_interact_stop = 3.0
+_texture = NodePath("Texture")
+_interact_timer = NodePath("InteractTimer")
+
+[node name="Texture" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_rpgbi")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Collision" parent="." index="1"]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_81bhh")

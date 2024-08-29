@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3iibs1hydwwc"
-path="res://.godot/imported/parado.png-88ace9f5aa4b441dd930cf0f2c5abb3c.ctex"
+uid="uid://cla4c5iugtr06"
+path="res://.godot/imported/residuo.png-9578e6d63e2f4fb19faa5bec379a2779.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character/GDzinha/parado/parado.png"
-dest_files=["res://.godot/imported/parado.png-88ace9f5aa4b441dd930cf0f2c5abb3c.ctex"]
+source_file="res://entities/DamageArea/residuo/residuo.png"
+dest_files=["res://.godot/imported/residuo.png-9578e6d63e2f4fb19faa5bec379a2779.ctex"]
 
 [params]
 

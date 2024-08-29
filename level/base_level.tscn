@@ -4,16 +4,24 @@
 [ext_resource type="Script" path="res://level/base_level.gd" id="1_qfi3t"]
 [ext_resource type="PackedScene" uid="uid://bjlykb0sdjpb7" path="res://character/GDzinha/gdzinha_character.tscn" id="2_3is3v"]
 [ext_resource type="PackedScene" uid="uid://c2v4ocrlrslet" path="res://terrain/terrain.tscn" id="2_l5rkk"]
+[ext_resource type="PackedScene" uid="uid://c855mvhoda5mi" path="res://BackGround/back_ground.tscn" id="3_553cn"]
 [ext_resource type="PackedScene" uid="uid://c8622qm0jhtdw" path="res://interface/hud.tscn" id="3_nwacb"]
 [ext_resource type="PackedScene" uid="uid://b6um50bqwqfgb" path="res://interactables/Porta/door_interactable.tscn" id="3_wgwck"]
 [ext_resource type="PackedScene" uid="uid://bwe1oeauaqtal" path="res://collectables/Coin/coin_collectable.tscn" id="3_yq6uy"]
 [ext_resource type="PackedScene" uid="uid://demrm01t1rr0d" path="res://collectables/PowerUps/Juices/RedJuice/double_jump_power_up.tscn" id="6_sl8bf"]
 [ext_resource type="PackedScene" uid="uid://cna223l6131tw" path="res://animatable/Plataform/platform.tscn" id="7_cbixk"]
 [ext_resource type="PackedScene" uid="uid://b5e1lbhmgewwi" path="res://interactables/Botao/button_interactable.tscn" id="7_n5mm0"]
-[ext_resource type="Script" path="res://TempFiles/Temp.gd" id="11_66w4v"]
 
 [node name="BaseLevel" type="Node2D"]
 script = ExtResource("1_qfi3t")
+
+[node name="BackGround" parent="." instance=ExtResource("3_553cn")]
+
+[node name="DamageArea" type="Node2D" parent="."]
+
+[node name="Animatables" type="Node2D" parent="."]
+
+[node name="Platform" parent="Animatables" instance=ExtResource("7_cbixk")]
 
 [node name="Terrain" parent="." instance=ExtResource("2_l5rkk")]
 
@@ -30,10 +38,6 @@ _interactable_object = NodePath("../../Animatables/Platform")
 
 [node name="DoubleJumpPowerUp" parent="PowerUps" instance=ExtResource("6_sl8bf")]
 
-[node name="Animatables" type="Node2D" parent="."]
-
-[node name="Platform" parent="Animatables" instance=ExtResource("7_cbixk")]
-
 [node name="Coins" type="Node2D" parent="."]
 
 [node name="CoinCollectable2" parent="Coins" instance=ExtResource("3_yq6uy")]
@@ -49,14 +53,12 @@ _speed = 100.0
 
 [node name="GDzinhaCharacter" parent="Characters" instance=ExtResource("2_3is3v")]
 _speed = 150.0
-
-[node name="Temp" type="Node2D" parent="."]
-script = ExtResource("11_66w4v")
-
-[node name="TempDamageArea" type="Area2D" parent="Temp"]
-
-[node name="Collision" type="CollisionShape2D" parent="Temp/TempDamageArea"]
+_jump_velocity = 380.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
-[connection signal="body_entered" from="Temp/TempDamageArea" to="Temp" method="_on_temp_damage_area_body_entered"]
+[node name="Tips" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

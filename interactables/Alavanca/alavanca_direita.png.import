@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyho1rlxy4vpg"
-path="res://.godot/imported/fundo_fabrica.png-bdbccfdf382c2c877673d3163043f7bf.ctex"
+uid="uid://dol0ha0vqd4lp"
+path="res://.godot/imported/alavanca_direita.png-d071b95185045a20a3b170f30d109793.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://terrain/fundo_fabrica.png"
-dest_files=["res://.godot/imported/fundo_fabrica.png-bdbccfdf382c2c877673d3163043f7bf.ctex"]
+source_file="res://interactables/Alavanca/alavanca_direita.png"
+dest_files=["res://.godot/imported/alavanca_direita.png-d071b95185045a20a3b170f30d109793.ctex"]
 
 [params]
 

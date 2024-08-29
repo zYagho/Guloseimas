@@ -24,7 +24,8 @@ func _process(_delta):
 	_coin_counter.text = str("%04d" %  global.score)
 	if minutes == 0 and seconds == 0:
 		#Lembrar de fazer aqui a parte do Game Over
-		global.change_scene("res://interface/gamer_over.tscn")
+		global.current_scene_path = "res://interface/gamer_over.tscn"
+		transition.fade_in()
 		
 func _on_clock_timer_timeout():
 	if seconds == 0:

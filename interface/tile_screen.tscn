@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://hotr2tr1ub07"]
+[gd_scene load_steps=12 format=3 uid="uid://hotr2tr1ub07"]
 
 [ext_resource type="Script" path="res://interface/tile_screen.gd" id="1_ms3rq"]
 [ext_resource type="Texture2D" uid="uid://dmgh08c42pnvh" path="res://interface/Characters/Characters_animated/Utfano/01.png" id="2_x68sc"]
@@ -27,6 +27,8 @@ frame_1/duration = 0.3
 frame_2/texture = ExtResource("8_j0ioh")
 frame_2/duration = 0.3
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_niwd0"]
+
 [node name="TileScreen" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -35,6 +37,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ms3rq")
+_scene_path = "res://interface/tile_screen.tscn"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -101,8 +104,11 @@ stretch_mode = 3
 [node name="LabelTitle" type="Label" parent="MarginContainer"]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(6.257e-07, 0.505664, 0.385319, 1)
 theme_override_fonts/font = ExtResource("3_af7nn")
 theme_override_font_sizes/font_size = 46
+theme_override_styles/normal = SubResource("StyleBoxEmpty_niwd0")
 text = "GULOSEIMAS"
 horizontal_alignment = 1
 

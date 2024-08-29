@@ -4,6 +4,7 @@ class_name Global
 #controle de cenas
 var current_scene: Node = null
 
+var current_scene_path: String = ""
 #Pontuação
 var score: int = 0
 
@@ -11,6 +12,7 @@ var score: int = 0
 func game_over() -> void:
 	pass
 
+#Controle da troca de Cena
 func change_scene(_path) -> void:
 	call_deferred("_call_scene", _path)
 	
