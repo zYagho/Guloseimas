@@ -9,5 +9,8 @@ _character_texture = NodePath("texture")
 
 [node name="collision" type="CollisionShape2D" parent="."]
 
-[node name="texture" type="AnimatedSprite2D" parent="."]
+[node name="texture" type="AnimatedSprite2D" parent="." node_paths=PackedStringArray("_character")]
 script = ExtResource("2_om2bm")
+_character = NodePath("..")
+
+[connection signal="animation_finished" from="texture" to="texture" method="_on_animation_finished"]

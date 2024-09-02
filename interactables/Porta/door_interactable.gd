@@ -31,6 +31,6 @@ func _on_texture_animation_finished():
 		_characters_count = 0
 		
 	if _texture.animation == "opening":
-		global.change_scene(_path)
-		print("Trocar de cena")
+		global.current_scene_path = _path
+		transition.fade_in()
 		#ainda falta implementar o segundo nivel em diante...

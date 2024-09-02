@@ -1,6 +1,9 @@
 extends AnimatedSprite2D
 class_name CharacterTexture
 
+@export_category("Objects")
+@export var _character: BaseCharacter
+
 var _is_action: bool = false
 
 func animate(_velocity: Vector2) -> void:
@@ -24,13 +27,24 @@ func animate(_velocity: Vector2) -> void:
 	if _velocity.x == 0 and _velocity.y == 0:
 		play("idle")
 		return
+func action_animate(_action_name: String) -> void:
+	_is_action = true
+	play(_action_name)
 		
-func action_animate() -> void:
-	pass
-	
 func _direction(_direct: float) -> void:
 	if _direct > 0:
 		flip_h = false
 	if _direct < 0:
 		flip_h = true
 	return
+
+func _on_animation_finished() -> void:
+
+	if animation == "hurt":
+		_is_action = false
+		
+		if _character.is_immortal:
+			return
+		#game_over
+		global.current_scene_path = "res://interface/gamer_over.tscn"
+		transition.fade_in()

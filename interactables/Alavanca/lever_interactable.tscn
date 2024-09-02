@@ -1,15 +1,22 @@
-[gd_scene load_steps=7 format=3 uid="uid://dixypyy3utxhh"]
+[gd_scene load_steps=8 format=3 uid="uid://dixypyy3utxhh"]
 
 [ext_resource type="PackedScene" uid="uid://cpjjq2ulsqkw2" path="res://interactables/base_interactable.tscn" id="1_5t3cw"]
 [ext_resource type="Script" path="res://interactables/Alavanca/lever_interactable.gd" id="2_8ypo2"]
-[ext_resource type="Texture2D" uid="uid://b0qxweeip4c46" path="res://interactables/Alavanca/esquerda.png" id="2_lsmcf"]
-[ext_resource type="Texture2D" uid="uid://dkh3lmwkxnypr" path="res://interactables/Alavanca/direita.png" id="3_wxmjw"]
+[ext_resource type="Texture2D" uid="uid://bbvol7amxrayi" path="res://interactables/Alavanca/alavanca_chao.png" id="3_5lqbp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rs5p"]
+atlas = ExtResource("3_5lqbp")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58aub"]
+atlas = ExtResource("3_5lqbp")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rpgbi"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_wxmjw")
+"texture": SubResource("AtlasTexture_0rs5p")
 }],
 "loop": true,
 "name": &"idle",
@@ -17,7 +24,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_lsmcf")
+"texture": SubResource("AtlasTexture_58aub")
 }],
 "loop": true,
 "name": &"interact",
@@ -37,9 +44,10 @@ _interact_timer = NodePath("InteractTimer")
 
 [node name="Texture" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_rpgbi")
-animation = &"idle"
+animation = &"interact"
 autoplay = "idle"
+frame_progress = 0.369174
 
 [node name="Collision" parent="." index="1"]
-position = Vector2(0, -2.5)
+position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_81bhh")

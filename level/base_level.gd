@@ -6,5 +6,3 @@ class_name BaseLevel
 
 func _ready():
 	global.current_scene_path = _scene_path
-
-

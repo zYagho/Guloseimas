@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dx7gbvbfctbdm" path="res://character/utfano/correndo/run.png" id="6_7vrlv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wwpi0"]
-size = Vector2(17, 28)
+size = Vector2(17, 22)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d7guu"]
 atlas = ExtResource("6_7vrlv")
@@ -86,10 +86,10 @@ script = ExtResource("2_3c44o")
 _jump_velocity = 275.0
 
 [node name="collision" parent="." index="0"]
-position = Vector2(1.5, 1)
+position = Vector2(1.5, 3)
 shape = SubResource("RectangleShape2D_wwpi0")
 
 [node name="texture" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_bxvln")
-animation = &"run"
+animation = &"hurt"
 autoplay = "idle"
