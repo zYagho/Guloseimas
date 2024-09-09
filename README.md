@@ -58,7 +58,5 @@ Para jogar Guloseimas, você precisará da Engine Godot. Siga as instruções ab
 
 ## Colaboradores
 
-Agradecemos a todos que contribuíram para o desenvolvimento de **Guloseimas**. Aqui estão alguns dos colaboradores que ajudaram a tornar este projeto possível:
-
 - **Pixel Art**: Pamella Lissa - [Link para o perfil](https://github.com/PamLissa)
 - **Sons**: Thaynara Falcão - [Link para o perfil](https://github.com/thaynarafalcao)
