@@ -26,30 +26,28 @@ Para jogar Guloseimas, você precisará da Engine Godot. Siga as instruções ab
     ```bash 
         git clone https://github.com/zYagho/Guloseimas.git
 
-
-
 2. **Instalar a Engine**: 
 
-    Windows:  
-        Baixar a Engine Godot: 
+    **Windows**:  
+        **Baixar a Engine Godot**: 
             Versão utilizada no projeto: [https://godotengine.org/download/archive/4.2.2-stable/](URL)
              Versão mais recente: [https://godotengine.org/download/windows/](URL)
-         Instalação: 
+         **Instalação**: 
             Após baixar a versão desejada, extraia o arquivo compactado e execute o arquivo Godot_v4.2.2-stable_win64.exe para iniciar a Engine.
 
-    Linux: 
-        Baixar a Engine Godot: 
-            Versão utilizada no projeto: [https://godotengine.org/download/archive/4.2.2-stable/](URL)
-            Versão mais recente: [https://godotengine.org/download/linux/](URL)
-         Instalação: 
-            Após baixar a versão desejada, descompacte o arquivo e torne o arquivo Godot_v4.2.2-stable_x11.64 executável com o comando:
+    **Linux**: 
+        **Baixar a Engine Godot**: 
+            **Versão utilizada no projeto**: [https://godotengine.org/download/archive/4.2.2-stable/](URL)
+            <br>**Versão mais recente**: [https://godotengine.org/download/linux/](URL)
+         **Instalação**: 
+            **Após baixar a versão desejada, descompacte o arquivo e torne o arquivo [Godot_v4.2.2-stable_x11.64] executável com o comando**:
             ```bash 
                chmod +x Godot_v4.2.2-stable_x11.64
-            Execute a Engine com o comando:
+            **Execute a Engine com o comando**:
             ```bash
                ./Godot_v4.2.2-stable_x11.64
         
-3. Abrir o projeto na Godot
+3. **Abrir o projeto na Godot**
     1. Após baixar o projeto, abra a Engine Godot.
     2. Na interface Godot, selecione "importar" ou "Open Project".
     3. Navegue até a paste onde você clonou o repositório e procure pelo arquivo [.godot].
