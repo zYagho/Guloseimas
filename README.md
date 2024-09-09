@@ -64,9 +64,11 @@ Para jogar Guloseimas, você precisará da Engine Godot. Siga as instruções ab
 ## Demonstração
 
 1. **Menu**
+   <br>
 ![Gif_menu](https://github.com/user-attachments/assets/dfbd06d1-9a50-4401-9195-6b948e2cf69d)
 
 2. **Jogabilidade**
+    <br>
 ![gif_level](https://github.com/user-attachments/assets/3fd41dc9-c23c-4589-bdb7-c138650751e4)
 
 
