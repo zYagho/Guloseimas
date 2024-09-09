@@ -36,15 +36,15 @@ Para jogar Guloseimas, você precisará da Engine Godot. Siga as instruções ab
             Após baixar a versão desejada, extraia o arquivo compactado e execute o arquivo Godot_v4.2.2-stable_win64.exe para iniciar a Engine.
 
     **Linux**: 
-        <br>**Baixar a Engine Godot**: 
-            <br>Versão utilizada no projeto: [https://godotengine.org/download/archive/4.2.2-stable/](URL)
-            <br>Versão mais recente: [https://godotengine.org/download/linux/](URL)
-        <br>**Instalação**: 
-            <br>Após baixar a versão desejada, descompacte o arquivo e torne o arquivo [Godot_v4.2.2-stable_x11.64] executável com o comando:
-            ```bash 
-               chmod +x Godot_v4.2.2-stable_x11.64
-            <br>Execute a Engine com o comando:
-            ```bash
+            <br>**Baixar a Engine Godot**: 
+                - Versão utilizada no projeto: [https://godotengine.org/download/archive/4.2.2-stable/](URL)
+                - Versão mais recente: [https://godotengine.org/download/linux/](URL)
+            <br>**Instalação**: 
+                - Após baixar a versão desejada, descompacte o arquivo e torne o arquivo [Godot_v4.2.2-stable_x11.64] executável com o comando:
+                ```bash 
+                chmod +x Godot_v4.2.2-stable_x11.64
+                - Execute a Engine com o comando:
+                ```bash
                ./Godot_v4.2.2-stable_x11.64
         
 3. **Abrir o projeto na Godot**
