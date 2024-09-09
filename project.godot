@@ -49,6 +49,7 @@ folder_colors={
 "res://interface/": "green",
 "res://level/": "red",
 "res://levels_notepad/": "yellow",
+"res://managements/": "orange",
 "res://songs/": "pink",
 "res://terrain/": "teal"
 }
