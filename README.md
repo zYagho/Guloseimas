@@ -6,7 +6,6 @@ Jogo desenvolvido para a disciplina de Desenvolvimento de Jogos
 
 - [Sobre](#sobre)
 - [Instalação](#instalação)
-- [Uso](#uso)
 - [Colaboradores](#colaboradores)
 
 ## Sobre
@@ -56,3 +55,8 @@ Para jogar Guloseimas, você precisará da Engine Godot. Siga as instruções ab
     4. Abra o projeto e clique em "Play" para executar o jogo.
 
     Pronto, agora basta você estar preparado para jogar o **GULOSEIMAS**.
+
+## Colaboradores
+
+    Pixel Art: Pamella Lissa - [Link para o perfil](https://github.com/PamLissa)
+    Sons: Thaynara Falcão - [Link para o perfil](https://github.com/thaynarafalcao)
