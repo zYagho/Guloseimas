@@ -60,3 +60,6 @@ Para jogar Guloseimas, você precisará da Engine Godot. Siga as instruções ab
 
 - **Pixel Art**: Pamella Lissa - [Link para o perfil](https://github.com/PamLissa)
 - **Sons**: Thaynara Falcão - [Link para o perfil](https://github.com/thaynarafalcao)
+
+## Demonstração
+
