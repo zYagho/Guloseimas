@@ -6,11 +6,16 @@ class_name LeverInteractable
 @export var _interact_position: Vector2 = Vector2(0, 220)
 @export var _interact_stop: float = 3
 
+@export_category("Objects")
+@export var _sound: AudioStreamPlayer
+
 func _on_body_entered(_body) -> void:
 	if _body is BaseCharacter and !_is_active:
 		_texture.play("interact")
 		_setInteract(_is_active, _interact_position, _interact_duration)
 		_interact_timer.start(_interact_duration + _interact_stop)
+		_sound.play()
+		
 		_is_active = true
 		return
 	

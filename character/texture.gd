@@ -42,9 +42,9 @@ func _on_animation_finished() -> void:
 
 	if animation == "hurt":
 		_is_action = false
-		
 		if _character.is_immortal:
 			return
-		#game_over
-		global.current_scene_path = "res://interface/gamer_over.tscn"
+		
+		global.last_scene_path = global.current_scene_path
+		global.current_scene_path = "res://interface/game_over.tscn"
 		transition.fade_in()

@@ -84,6 +84,8 @@ size = Vector2(48, 40)
 [node name="DoorInteractable" node_paths=PackedStringArray("_texture", "_interact_timer") instance=ExtResource("1_h8ujq")]
 script = ExtResource("2_rlmdt")
 _path = "res://level/level_2.tscn"
+_last_path = ""
+_next_path = ""
 _texture = NodePath("Texture")
 _interact_timer = NodePath("InteractTimer")
 

@@ -3,6 +3,8 @@ class_name DoorInteractable
 
 @export_category("Proxima Cena")
 @export var _path: String
+@export var _last_path: String
+@export var _next_path: String
 
 var _characters_count: int = 0
 
@@ -31,6 +33,8 @@ func _on_texture_animation_finished():
 		_characters_count = 0
 		
 	if _texture.animation == "opening":
+		global.last_scene_path = _last_path
 		global.current_scene_path = _path
+		global.next_scene_path = _next_path
 		transition.fade_in()
 		#ainda falta implementar o segundo nivel em diante...

@@ -72,10 +72,12 @@ layer_0/tile_data = PackedInt32Array(917507, 65539, 2, 917508, 65539, 2, 917509,
 
 [node name="HUD" parent="." index="4"]
 default_minutes = 1
-default_seconds = 30
 
 [node name="DoorInteractable" parent="Interactables" index="0"]
 position = Vector2(732, 79)
+_path = "res://interface/finishLevel/finish_level.tscn"
+_last_path = "res://level/level_4.tscn"
+_next_path = "res://level/level_5.tscn"
 
 [node name="ButtonInteractable" parent="Interactables" index="1"]
 visible = false

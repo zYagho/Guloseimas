@@ -37,8 +37,10 @@ func take_damage() -> void:
 func knockback() -> void:
 	velocity.x = 2
 	velocity.y = -1 * 250
-	set_collision_layer_value(1, false)
-	set_collision_mask_value(1,false)
+	
+	if !is_immortal:
+		set_collision_layer_value(1, false)
+		set_collision_mask_value(1,false)
 	#var _knockback_direction: Vector2 = _entity.global_position.direction_to(global_position)
 	#velocity.x = _knockback_direction.x * _knockback_speed
 	#velocity.y = -1 * _knockback_speed

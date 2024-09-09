@@ -7,6 +7,7 @@ script = ExtResource("1_157fk")
 _powerUp_timer = NodePath("BuffTimer")
 
 [node name="BuffTimer" type="Timer" parent="."]
+wait_time = 4.0
 one_shot = true
 autostart = true
 

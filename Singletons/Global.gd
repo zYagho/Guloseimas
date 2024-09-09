@@ -4,30 +4,13 @@ class_name Global
 #controle de cenas
 var current_scene: Node = null
 
+var last_scene_path: String = ""
 var current_scene_path: String = ""
+var next_scene_path: String = ""
 #Pontuação
+var score_before_level: int = 0
 var score: int = 0
+var coins: int = 0
 
-#Controle temporário de vida do personagem.
-func game_over() -> void:
-	pass
-
-#Controle da troca de Cena
-func change_scene(_path) -> void:
-	call_deferred("_call_scene", _path)
-	
-func _call_scene(_path) -> void:
-	
-	if current_scene != null:
-		current_scene.free()
-	
-	var _new_scene: PackedScene = load(_path)
-	current_scene = _new_scene.instantiate()
-	
-	get_tree().root.add_child(current_scene)
-	get_tree().current_scene = current_scene
-	
-	score = 0
-	
 func quit_game() -> void:
 	pass

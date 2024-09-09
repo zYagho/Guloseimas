@@ -6,3 +6,6 @@ class_name BaseLevel
 
 func _ready():
 	global.current_scene_path = _scene_path
+	global.last_scene_path = _scene_path
+	global.coins = 0
+	global.score_before_level = global.score
