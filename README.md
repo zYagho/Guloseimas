@@ -18,38 +18,33 @@ Os personagens do jogo são inspirados em doces, o que adiciona um toque encanta
 
 ## Instalação
 
-Para jogar Guloseimas, você precisará da Engine Godot. Siga as instruções abaixo para instalar a versão necessária:
+Para jogar <strong>Guloseimas</strong>, você precisará da Engine Godot. Siga as instruções abaixo para instalar a versão necessária:<br>
 
-1. Baixar o projeto:
+1. Baixar o projeto:<br>
 
-    Clone o repositório do projeto usando o Git
+    Clone o repositório do projeto usando o Git<br>
 
         git clone https://github.com/zYagho/Guloseimas.git
 
 
 
-2. Instalar a Engine:
+2. Instalar a Engine:<br>
 
-    Windows: 
-        Baixar a Engine Godot:
+    Windows: <br>
+        Baixar a Engine Godot:<br>
             Versão utilizada no projeto: https://godotengine.org/download/archive/4.2.2-stable/
             Versão mais recente: https://godotengine.org/download/windows/
-
-        Instalação:
+        <br>Instalação:<br>
             Após baixar a versão desejada, extraia o arquivo compactado e execute o arquivo Godot_v4.2.2-stable_win64.exe para iniciar a Engine.
 
-    Linux:
-        Baixar a Engine Godot:
+    Linux:<br>
+        Baixar a Engine Godot:<br>
             Versão utilizada no projeto: https://godotengine.org/download/archive/4.2.2-stable/
             Versão mais recente: https://godotengine.org/download/linux/
-
-        Instalação:
-            Após baixar a versão desejada, descompacte o arquivo e torne o arquivo Godot_v4.2.2-stable_x11.64 executável com o comando:
-
+        <br>Instalação:<br>
+            <br>Após baixar a versão desejada, descompacte o arquivo e torne o arquivo Godot_v4.2.2-stable_x11.64 executável com o comando:
                 chmod +x Godot_v4.2.2-stable_x11.64
-
-            Execute a Engine com o comando:
-
+            <br>Execute a Engine com o comando:
                 ./Godot_v4.2.2-stable_x11.64
         
 3. Abrir o projeto na Godot
