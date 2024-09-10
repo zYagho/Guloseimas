@@ -7,6 +7,7 @@ Jogo desenvolvido para a disciplina de Desenvolvimento de Jogos
 - [Sobre](#sobre)
 - [Instalação](#instalação)
 - [Colaboradores](#colaboradores)
+- [Demonstração](#demonstração)
 
 ## Sobre
 
